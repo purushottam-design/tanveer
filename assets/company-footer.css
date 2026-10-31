@@ -1,4 +1,11 @@
 /* Footer development credit and creative partners. */
+.closing-word > span {
+  transition: color .3s ease, text-shadow .3s ease;
+}
+.closing-word:hover > span {
+  color: var(--lime);
+  text-shadow: 0 0 18px #c9ff5d66, 0 0 45px #c9ff5d33;
+}
 .footer { flex-wrap: wrap; }
 .footer > .company-footer-links {
   flex: 0 0 100%; width: 100%;
@@ -58,5 +65,6 @@
   .company-footer-links a {font-size: 10px;}
 }
 @media (prefers-reduced-motion: reduce) {
+  .closing-word > span,
   .company-footer-links a {transition: none;}
 }
